@@ -10,5 +10,7 @@ I hope you enjoy my portfolio and find it informative. If you have any questions
 Contact information
 
 Email: alazaradane418@gmail.com
+
 GitHub: alazaradane
+
 Telegram: @Astropia369
