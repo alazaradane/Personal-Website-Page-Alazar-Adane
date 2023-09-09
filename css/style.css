@@ -1,0 +1,974 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    height: auto;
+    background: #fff;
+    border: solid black 1px;
+}
+
+.hero{
+    /* background-color: #1c1d25; */
+    background-image: url(../images/hero-bg.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    color: white;
+    font-size: 40px;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0.5rem;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 17px;
+    margin-top: 15px;
+}
+ul li a:hover{
+    color: #b6b3b3;
+}
+
+
+li{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 50px;
+    margin: 2rem 0 0.5rem 0;
+}
+
+h2{
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+p{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.hero--text{
+    margin-left: 150px;
+    margin-bottom: 200px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: 1px solid #ccc;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: dodgerblue;
+}
+button:active{
+    background: #a9a9a9;
+    color: #808080;
+}
+.hero--area{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.socials{
+    padding-bottom: 200px;
+    margin-right: 2rem;
+}
+
+.socials img{
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.logo{
+    height: 100px;
+    margin-bottom: 15px;
+    padding-top: 0;
+    position: relative;
+    bottom: 20px;   
+}
+
+/*About Me*/
+
+.sub-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px; 
+}
+
+.headshot{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 0 6rem 0.5rem 2rem;
+}
+@media screen and (max-width: 720px){
+    .headshot{
+        width: 250px;
+        height: 250px;
+    }
+    .information p{
+        font-size: 20px;
+    }
+}
+
+.headshot-container{
+    display: flex;
+    align-items: center;
+}
+
+/*Projects*/
+
+.project{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px;
+    background: url(../images/skill_3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.project--card{
+    width: 400px;
+    height: auto;
+    margin: 0 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+.project--card:hover{
+    box-shadow: 0 0 20px #ccc;
+    transform: scale(1.1);
+}
+
+.project--container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.text{
+    font-size: 15px;
+    font-weight: 300;
+    margin: 1rem 0.25rem;
+}
+
+.project--image{
+    width: 273px;
+    border-radius: 15px;
+}
+.image--1{
+    height: 16rem;
+}
+
+hr{
+    margin: 10px 20px 15px 20px;
+}
+.project--card h3{
+    margin: 1rem 0;
+}
+.project--card .link{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s; 
+}
+.project--card .link:hover{
+    color: dodgerblue;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Contact*/
+
+footer{
+    height: 500px;
+    background-color: #000;
+}
+.contact--info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact--image{
+    width: 300px;
+    margin: 3rem;
+}
+
+.col--2{
+    color: #fff;
+}
+
+.hero--image .hero--photo{
+    position: relative;
+    bottom: 5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.hero--image .hero--photo:hover{
+    transform: scale(1.1);
+}
+
+.progress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.pro{
+    margin: 1rem;
+}
+.pro--text p{
+    display: inline-flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: #fff;
+}
+.pro--text-1{
+    margin: 0 19rem 0.25rem 1rem;
+}
+.pro--bar{
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    padding: 0;
+    height: 12px;
+    width: 25rem;
+}
+.pro--bar .input{
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    background: #fff;
+    width: 24.5rem;
+    height: 10px;
+    margin: 0;
+    position: relative;
+    bottom: 8px;
+    left: 0;
+    opacity: 0.9;
+}
+
+.skill{
+    padding: 2rem 0;
+    background: url(../images/skill_3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.skill--header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill--header p:nth-child(1){
+    font-size: 20px;
+    margin: 0.5rem 0;
+    color:#fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.skill--header p:nth-child(1):hover{
+    color: dodgerblue;
+}
+.skill--header h2{
+    color: #fff;
+    transition: all 0.3s;
+}
+.skill--header h2:hover{
+    color: rgb(235, 236, 250);
+}
+
+.javascript{
+    margin-right: 16rem;
+}
+.css{
+    margin-right: 19.3rem;
+}
+.html{
+    margin-right: 18.8rem;
+}
+
+.react{
+    margin-right: 18.5rem;
+}
+
+.django{
+    margin-right: 17.7rem;
+}
+.vue{
+    margin-right: 19.5rem;
+}
+
+.in-css{
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    background: #fff;
+    width: 23.5rem;
+    height: 10px;
+    margin: 0;
+    position: relative;
+    bottom: 8px;
+    left: 0;
+    opacity: 0.9;
+}
+
+.in-javascipt{
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    background: #fff;
+    width: 21.5rem;
+    height: 10px;
+    margin: 0;
+    position: relative;
+    bottom: 8px;
+    left: 0;
+    opacity: 0.9;
+}
+
+.in-react{
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    background: #fff;
+    width: 19.5rem;
+    height: 10px;
+    margin: 0;
+    position: relative;
+    bottom: 8px;
+    left: 0;
+    opacity: 0.9;
+}
+
+.in-django{
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    background: #fff;
+    width: 21.5rem;
+    height: 10px;
+    margin: 0;
+    position: relative;
+    bottom: 8px;
+    left: 0;
+    opacity: 0.9;
+}
+
+.in-vue{
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    background: #fff;
+    width: 17.5rem;
+    height: 10px;
+    margin: 0;
+    position: relative;
+    bottom: 8px;
+    left: 0;
+    opacity: 0.9;
+}
+
+.off{
+    padding: 2rem 0;
+    background: url(../images/skill_3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.offer{
+    width: 20rem;
+    border: 1px solid #ccc;
+    padding: 1rem 2rem;
+    color: #e6e4e4;
+    border-radius: 15px;
+    margin: 0 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.offer:hover{
+    transform: scale(1.05);
+}
+
+.offer i {
+    color: #ccc;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.offer h2{
+    margin: 2.5rem 0 1.5rem 0;
+    font-size: 1.5rem;
+}
+.offer p{
+    font-size: 0.9rem;
+}
+
+.about--header{
+    text-align: center;
+    color: #e7e6e6;
+    margin-top: 2rem;
+}
+.about--header h2{
+    margin: 1rem 0;
+}
+.about--header p{
+    font-size: 1.05rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.about--header p:hover{
+    color: dodgerblue;
+}
+.about--content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.about--me{
+    height: auto;
+    background: url(../images/skill_3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.information{
+    margin-left: 8rem;
+    color: #d8d6d6;
+}
+
+.information h2{
+    font-size: 1.6rem;
+    
+}
+.information p{
+    font-size: 1.1rem;
+}
+
+.table{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 1rem;
+    padding: 2rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.table--1,
+.table--2{
+    border: 1px solid #ccc;
+    padding: 2rem 3rem;
+}
+.table--1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.table--2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2rem 4rem;
+}
+.table--text{
+    line-height: 2.5rem;
+}
+
+.table--text h3{
+    margin-top: 0.5rem;
+}
+.table--text p{
+    font-weight:lighter;
+    opacity: 0.85;
+}
+
+.service{
+    background: url(../images/skill_3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem;
+}
+
+.service--card{
+    width: 15rem;
+    margin: 1rem 1rem;
+}
+.service--card i{
+    margin-left: 5.5rem;
+}
+
+.service--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+footer{
+    background: url(../images/skill_3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem;
+    height: auto;
+}
+.icon--container{
+    color: #fff;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+.icon i{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+    position: relative;
+    left: 0.3rem;
+}
+
+.icon--icon{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: 0 2rem;
+    border: none;
+    background: dodgerblue;
+}
+.icon--text p{
+    font-size: 1rem;
+    font-weight: 100;
+    color: #d8d6d6;
+}
+
+.contact--form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact--input{
+    margin: 0.5rem 0.1rem;
+    padding: 1rem;
+    background: none;
+    border: 1px solid #ccc;
+    width:13rem;
+    border-radius: 6px;
+    outline: 0;
+    color: #fff;
+}
+.contact--input:hover{
+    box-shadow: 0 0 5px dodgerblue;
+}
+
+::placeholder{
+    color: #fff;
+    font-weight: 200;
+}
+
+.textarea{
+    width: 460px;
+    font-family: sans-serif;
+    margin-bottom: 0;
+}
+.button--1{
+    margin-top: 0;
+    border-radius: 10px;
+}
+.form--button{
+    margin-right: 10rem;
+    margin-top: 1rem;
+}
+button[type='submit']{
+   border-radius: 30px;
+   position: relative;
+   right: 1rem;
+   background: rgb(0, 174, 255);
+   border: 0;
+   outline: 0;
+   transition: all 0.8s;
+}
+button[type='submit']:hover{
+    background:rgb(2, 129, 189) ;
+}
+
+.icon--icon--1{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: 0 2rem;
+    border: none;
+    background: dodgerblue;
+}
+.icon--icon--1 i{
+    width: 1px;
+    margin: 0;
+}
+.icon--icon--1 i::before{
+    position: relative;
+    right: 0.2rem;
+}
+.icon--icon .fa-phone::before{
+    position: relative;
+    right: 0.1rem;
+}
+
+.about--dec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.about--comp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 2rem 1rem;
+    margin: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.about--comp:hover{
+    transform: scale(1.1);
+}
+
+.about--comp h1{
+    margin: 0 1rem;
+    color: dodgerblue;
+}
+.about--comp p{
+    font-weight: 800;
+    color: #fff;
+}
+
+.testimonial{
+    background: url(../images/skill_3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 2rem 0;
+}
+.quote{
+    color: dodgerblue;
+    font-size: 3rem;
+}
+
+.test--text{
+    color: #fff;
+}
+
+.test--p{
+    width: 35rem;
+    text-align: center;
+}
+
+.test--pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+.test--pro--img{
+    width: 4rem;
+    margin: 0;
+    position: relative;
+    left: 5rem;
+    bottom: 0.3rem;
+}
+.test--pro--text{
+    margin: 0;
+}
+.test--pro--text p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.cv-button{
+    position: relative;
+    left: 2rem;
+    margin-top: -1.5rem;
+}
+
+/* Blogs*/
+.blog{
+    background: url(../images/skill_3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem;
+    height: auto;
+    margin: 0;
+    transition: all 0.3s;
+}
+.blogs:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 6px #ccc;
+}
+.blog--container{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    padding: 0;
+}
+.blog--img{
+    width: 365px;
+    height: 250px;
+    margin: 0;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+.blogs{
+    width: 23rem;
+    border: 1px solid #ccc;
+    color: #e6e4e4;
+    border-radius: 15px;
+    margin: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(0.95);
+}
+.blogs:hover{
+    transform: scale(1.2);
+}
+
+.blog--main{
+    transform: scale(1.2);
+}
+
+.blog--text{
+    margin: 1rem 2rem;
+}
+.blog--text h2{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.blog--text p{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/*News*/
+.news{
+    background: url(../images/skill_3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5rem;
+    color: #fff;
+    height: auto;
+    
+}
+
+.news--input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.subscribe{
+    font-size: 1.1rem;
+    color: dodgerblue;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.subscribe:hover{
+    color: rgb(255, 255, 255);
+}
+.news--text h2{
+    font-size: 2.75rem;
+    margin-bottom: 0;
+}
+.get{
+    font-size: 0.75rem;
+    color: #b6b3b3;
+}
+
+.news--input--info{
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.news--input--info:hover{
+    box-shadow: 0 0 10px dodgerblue;
+}
+
+.news--input--info input{
+    background: 0;
+    border: 0;
+    outline: 0;
+    color: #fff;
+}
+.news--input--info input::placeholder{
+    font-weight: 200px;
+    font-size: 1.2rem;
+}
+.news--input--info i{
+    color: dodgerblue;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: url(../images/skill_3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    color: #fff;
+    height: 100vh;
+}
+
+.section--end{
+    width: 270px;
+    height: 300px;
+}
+
+.end--icon{
+    display: flex;
+    flex-direction: row;
+}
+.end--icon i{
+    margin: 0 0.5rem;
+    color: dodgerblue;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+.end--icon i:hover{
+    color: #fff;
+    transform: scale(1.3);
+}
+
+.end--img{
+    width: 100px;
+    margin-top:0;
+    position: relative;
+    bottom: 1rem;
+}
+.section--end p{
+    font-size: 1rem;
+    margin-bottom: 1.5rem ;
+    line-height: 1.6;
+    color: #dbd0d0;
+    width: 230px;
+}
+.end--alazar {
+    position: relative;
+    top: 15rem;
+    
+}
+.end--alazar p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ccc;
+}
+.footer--list{
+    display: flex;
+    flex-direction: column;
+}
+.footer--list li{
+    font-size: 0.9rem;
+    line-height: 2.5rem;
+    font-weight: 100;
+    color: #dbd0d0;
+    width: auto;
+}
+.footer--list li i{
+    margin-right: 10px;
+}
+.footer--header{
+    text-align: left;
+    margin-left: 2.5rem;
+    cursor: pointer;
+}
+
+.section--end--list{
+    position: relative;
+    top: 6.4rem;
+}
+
+.list--item{
+    font-weight: 200;
+}
+
+.end--sections{
+    position: relative;
+    right: 2rem;
+}
+.terms {
+    font-size: 0.5rem;
+    position: relative;
+    top: 17rem;
+}
+
+.section--end--last{
+    position: relative;
+    left: -3rem;
+}
+
+.news--input button{
+    width: none;
+    height: none;
+    background: none;
+    cursor: pointer;
+}
